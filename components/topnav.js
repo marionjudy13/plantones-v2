@@ -9,11 +9,11 @@ export default function Topnav() {
         <span class="-mt-1">A Botanical Collection of Colors</span>
       </div>
       <div class="flex">
-        <span class="mr-3">
-          <FaSearch />
+        <span class="mr-5">
+          <FaSearch class="scale-150" />
         </span>
         <span>
-          <ZoAddSolid />
+          <ZoAddSolid class="scale-150"/>
         </span>
       </div>
     </div>

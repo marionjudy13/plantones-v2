@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { createClient } from 'next-sanity'
 import Topnav from '../components/topnav'
+import Grid from '../components/grid'
+
 
 export default function Home({ plants }) {
   return (
@@ -12,16 +14,7 @@ export default function Home({ plants }) {
       </Head>
 
       <Topnav />
-      <main>
-        <h2>Plants</h2>
-        {plants.length > 0 && (
-          <ul>
-            {plants.map((plant) => (
-              <li key={plant._id}>{plant?.commonName}</li>
-            ))}
-          </ul>
-        )}
-      </main>
+      <Grid props={plants} />
     </div>
   )
 }
