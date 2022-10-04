@@ -22,9 +22,19 @@ export default {
       },
     },
     {
+      name: 'hexCode',
+      type: 'string',
+      title: 'Hex Code',
+    },
+    {
       name: 'lightReq',
       type: 'string',
       title: 'Light Requirements',
+    },
+    {
+      name: 'waterReq',
+      type: 'string',
+      title: 'Water Requirements',
     },
     {
       name: 'dirtReq',

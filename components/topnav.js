@@ -3,17 +3,17 @@ import ZoAddSolid from '@meronex/icons/zo/ZoAddSolid'
 
 export default function Topnav() {
   return (
-    <div class="flex items-center p-5">
-      <div class="flex flex-wrap">
-        <span class="text-3xl font-black uppercase">Plantones</span>
-        <span class="-mt-1">A Botanical Collection of Colors</span>
+    <div class="flex items-center justify-between p-5 sm:px-10">
+      <div class="flex flex-wrap w-56 sm:w-72 ">
+        <span class="text-3xl font-black uppercase sm:text-6xl">Plantones</span>
+        <span class="-mt-1 sm:text-xl">A Botanical Collection of Colors</span>
       </div>
-      <div class="flex">
-        <span class="mr-5">
-          <FaSearch class="scale-150" />
+      <div class="flex mr-2">
+        <span class="mr-5 sm:mr-10">
+          <FaSearch class="scale-150 sm:scale-[2.25]" />
         </span>
-        <span>
-          <ZoAddSolid class="scale-150"/>
+        <span class="-mt-.5">
+          <ZoAddSolid class="scale-150 sm:scale-[2.25]"/>
         </span>
       </div>
     </div>
