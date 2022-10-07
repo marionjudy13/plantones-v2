@@ -9,9 +9,27 @@ export default {
       title: 'Common Name',
     },
     {
+  title: 'Slug',
+  name: 'slug',
+  type: 'slug',
+  options: {
+    source: 'commonName',
+    maxLength: 200, // will be ignored if slugify is set
+    slugify: input => input
+                         .toLowerCase()
+                         .replace(/\s+/g, '-')
+                         .slice(0, 200)
+  }
+},
+    {
       name: 'scientificName',
       type: 'string',
       title: 'Scientific Name',
+    },
+    {
+      name: 'geoOrigin',
+      type: 'string',
+      title: 'Geographical Origin',
     },
     {
       title: 'Plant Image',
@@ -30,6 +48,8 @@ export default {
       name: 'lightReq',
       type: 'string',
       title: 'Light Requirements',
+      type: 'reference',
+      to: [{type: 'lightReq'}]
     },
     {
       name: 'waterReq',
@@ -40,6 +60,11 @@ export default {
       name: 'dirtReq',
       type: 'string',
       title: 'Dirt Requirements',
+    },
+    {
+      name: 'toxicity',
+      type: 'string',
+      title: 'Can my cat eat it?',
     },
   ],
 }
