@@ -11,7 +11,6 @@ function urlFor(source) {
 export default function Grid({ props }) {
     return (
         <div>
-        {console.log(props)}
             {props.length > 0 && (
             <div class="px-5 grid gap-2 grid-cols-2 sm:px-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 ">
                 {props.map((plant) => (

@@ -1,16 +1,21 @@
+import PlantCard from "@components/plantCard";
 import { client } from "@utils/client";
 import Layout from "../../components/Layout";
 
-const PlantPage = ({ singlePlant: { commonName } }) => {
-    return <Layout>{commonName}</Layout>;
-}
+const PlantPage = ({ singlePlant: { commonName, hexCode } }) => {
+  return (
+    <Layout>
+      <PlantCard name={commonName} pantone={hexCode} />
+    </Layout>
+  );
+};
 
 export default PlantPage;
 
 export async function getServerSideProps({ params }) {
-    const { plant } = params;
-    const singlePlant = await client.fetch(
-        `*[_type == "plants" && slug.current == $plant][0] {
+  const { plant } = params;
+  const singlePlant = await client.fetch(
+    `*[_type == "plants" && slug.current == $plant][0] {
         commonName,
         dirtReq,
         geoOrigin,
@@ -23,15 +28,15 @@ export async function getServerSideProps({ params }) {
         plantImage,
         scientificName,
         toxicity
-    }`, 
+    }`,
     {
-        plant
+      plant,
     }
-    );
+  );
 
-return {
+  return {
     props: {
-        singlePlant
-    }
-}
+      singlePlant,
+    },
+  };
 }
