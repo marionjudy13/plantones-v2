@@ -1,11 +1,13 @@
 import FaSearch from '@meronex/icons/fa/FaSearch'
 import ZoAddSolid from '@meronex/icons/zo/ZoAddSolid'
+import Link from 'next/link'
 
 export default function Topnav() {
   return (
     <div class="flex items-center justify-between p-5 sm:px-10">
       <div class="flex flex-wrap w-56 sm:w-72 ">
-        <span class="text-3xl font-black uppercase sm:text-6xl">Plantones</span>
+      <Link href="/" class="cursor-pointer">
+        <a class="text-3xl font-black uppercase sm:text-6xl">Plantones</a></Link>
         <span class="-mt-1 sm:text-xl">A Botanical Collection of Colors</span>
       </div>
       <div class="flex mr-2">

@@ -1,4 +1,4 @@
-import Grid from '@components/grid'
+import Grid from '@components/Grid'
 import { client } from '@utils/client'
 import Layout from '@components/Layout'
 

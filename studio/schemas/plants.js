@@ -45,6 +45,11 @@ export default {
       title: 'Hex Code',
     },
     {
+      name: 'pantone',
+      type: 'string',
+      title: 'Pantone',
+    },
+    {
       name: 'lightReq',
       type: 'string',
       title: 'Light Requirements',

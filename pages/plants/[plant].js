@@ -1,11 +1,23 @@
-import PlantCard from "@components/plantCard";
+import PlantCard from "@components/PlantCard";
+import PlantCardList from "@components/PlantCardList";
+import PlantInfo from "@components/PlantInfo";
 import { client } from "@utils/client";
 import Layout from "../../components/Layout";
 
-const PlantPage = ({ singlePlant: { commonName, hexCode } }) => {
+const PlantPage = ({
+  singlePlant: { commonName, hexCode, scientificName, plantImage, pantone },
+}) => {
   return (
     <Layout>
-      <PlantCard name={commonName} pantone={hexCode} />
+      <PlantCardList name={commonName} pantone={hexCode} />
+      <PlantCard
+        name={commonName}
+        pantone={pantone}
+        hexCode={hexCode}
+        scientificName={scientificName}
+        image={plantImage}
+      />
+      <PlantInfo name={commonName} />
     </Layout>
   );
 };
@@ -20,6 +32,7 @@ export async function getServerSideProps({ params }) {
         dirtReq,
         geoOrigin,
         hexCode,
+        pantone,
         lightReq -> {
             lightType,
             lightDescription,

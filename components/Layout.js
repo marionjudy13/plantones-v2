@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Topnav from "@components/topnav"
+import Topnav from "@components/Topnav"
 
 const Layout = ({ children }) => {
     return (
@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
                 <link rel="icon" href="/plantone-icon.ico" />
             </Head>
             <Topnav />
-            {children}
+            <section class="p-5 sm:p-10 border-y">{children}</section>
         </main>
     )
 }
