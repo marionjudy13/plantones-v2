@@ -9,7 +9,7 @@ function urlFor(source) {
 
 export default function PlantCard({ scientificName, image, pantone, hexCode }) {
   return (
-    <section class="border border-black">
+    <section class="border border-black mb-10 shadow-lg">
       <span
         class="block bg-no-repeat bg-cover aspect-w-1 aspect-h-1"
         style={{

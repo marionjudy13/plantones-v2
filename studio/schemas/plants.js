@@ -27,6 +27,11 @@ export default {
       title: 'Scientific Name',
     },
     {
+      name: 'nicknames',
+      type: 'string',
+      title: 'Nicknames',
+    },
+    {
       name: 'geoOrigin',
       type: 'string',
       title: 'Geographical Origin',
@@ -70,6 +75,12 @@ export default {
       name: 'toxicity',
       type: 'string',
       title: 'Can my cat eat it?',
+    },
+    {
+      name: 'funFacts',
+      title: 'Fun Facts',
+      type: 'array', 
+      of: [{type: 'block'}]
     },
   ],
 }

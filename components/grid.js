@@ -12,12 +12,12 @@ export default function Grid({ props }) {
     return (
         <div>
             {props.length > 0 && (
-            <div class="px-5 grid gap-2 grid-cols-2 sm:px-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 ">
+            <div class="grid gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 ">
                 {props.map((plant) => (
                 <Link href={`/plants/${plant.slug}`}
                     key={plant._id}> 
                     <a 
-                        class="bg-no-repeat bg-cover bg-green-500 border-solid border-2 border-black aspect-w-1 aspect-h-1"
+                        class="bg-no-repeat bg-cover bg-green-500 border-solid border border-black aspect-w-1 aspect-h-1"
                         style={{
                             backgroundColor: plant.hexCode,
                             backgroundImage: plant.plantImage
