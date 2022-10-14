@@ -19,7 +19,7 @@
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.4.12",
-    "eslint": "8.24.0",
+    "eslint": "^8.24.0",
     "eslint-config-next": "12.3.1",
     "eslint-plugin-react": "^7.31.10",
     "postcss": "^8.4.16",
