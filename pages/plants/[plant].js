@@ -1,7 +1,7 @@
-import PlantCard from "@components/PlantCard";
-import PlantCardList from "@components/PlantCardList";
-import PlantInfo from "@components/PlantInfo";
-import { client } from "@utils/client";
+import PlantCard from "../../components/PlantCard";
+import PlantCardList from "../../components/PlantCardList";
+import PlantInfo from "../../components/PlantInfo";
+import { client } from "../../utils/client";
 import Layout from "../../components/Layout";
 
 const PlantPage = ({
