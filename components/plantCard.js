@@ -22,7 +22,6 @@ export default function PlantCard({ scientificName, image, pantone, hexCode }) {
       <div class="p-5">
         <h1 class="text-2xl uppercase sm:text-6xl">{pantone}</h1>
         <h2 class="text-lg">{scientificName}</h2>
-        <h2 class="text-lg">{scientificName}</h2>
       </div>
     </section>
   );
