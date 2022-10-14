@@ -1,6 +1,6 @@
-import Grid from '@components/Grid'
-import { client } from '@utils/client'
-import Layout from '@components/Layout'
+import Grid from '../components/Grid'
+import { client } from '../utils/client'
+import Layout from '../components/Layout'
 
 export default function Home({ plants }) {
   return (

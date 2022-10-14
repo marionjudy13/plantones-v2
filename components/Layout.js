@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Topnav from "@components/Topnav"
+import Topnav from "../components/Topnav"
 
 const Layout = ({ children }) => {
     return (
